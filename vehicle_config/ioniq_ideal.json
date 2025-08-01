@@ -1,0 +1,340 @@
+{   
+    "type": "vehicle.lincoln.mkz",
+    "id": "hero",
+    "sensors": 
+    [
+        {
+            "type": "sensor.other.gnss",
+            "id": "base_link",
+            "spawn_point": {"x": 0.0, "y": 0.0, "z": 0.0, "roll": 0.0, "pitch": 0.0, "yaw": 0.0}
+        },
+        {
+            "type": "sensor.camera.rgb",
+            "id": "camera0",
+            "spawn_point": {"x": 0.33, "y": 0.0, "z": 1.45, "roll": 0.0, "pitch": 0.0, "yaw": 0.0},
+            "image_size_x": 1920,
+            "image_size_y": 1080,
+            "fov": 28
+        },
+        {
+            "type": "sensor.camera.rgb",
+            "id": "camera1",
+            "spawn_point": {"x": 0.090, "y": 0.0, "z": 1.65, "roll": 0.0, "pitch": 0.0, "yaw": 0},
+            "image_size_x": 1920,
+            "image_size_y": 1080,
+            "fov": 56
+        },
+        {
+            "type": "sensor.camera.rgb",
+            "id": "camera2",
+            "spawn_point": {"x": 0.030, "y": -0.1, "z": 1.65, "roll": 0.0, "pitch": 0.0, "yaw": -54.0},
+            "image_size_x": 1920,
+            "image_size_y": 1080,
+            "fov": 56
+        },
+        {
+            "type": "sensor.camera.rgb",
+            "id": "camera3",
+            "spawn_point": {"x": -0.09, "y": -0.1, "z": 1.65, "roll": 0.0, "pitch": 0.0, "yaw": -111.0},
+            "image_size_x": 1920,
+            "image_size_y": 1080,
+            "fov": 56
+        },
+        {
+            "type": "sensor.camera.rgb",
+            "id": "camera4",
+            "spawn_point": {"x": -0.180, "y": 0.0, "z": 1.65, "roll": 0.0, "pitch": 0.0, "yaw": -180.0},
+            "image_size_x": 1920,
+            "image_size_y": 1080,
+            "fov": 98
+        },
+        {
+            "type": "sensor.camera.rgb",
+            "id": "camera5",
+            "spawn_point": {"x": -0.09, "y": 0.1, "z": 1.65, "roll": 0.0, "pitch": 0.0, "yaw": -249.0},
+            "image_size_x": 1920,
+            "image_size_y": 1080,
+            "fov": 56
+        },
+        {
+            "type": "sensor.camera.rgb",
+            "id": "camera6",
+            "spawn_point": {"x": 0.03, "y": 0.1, "z": 1.65, "roll": 0.0, "pitch": 0.0, "yaw": 54.0},
+            "image_size_x": 1920,
+            "image_size_y": 1080,
+            "fov": 56
+        },
+        {
+            "type": "sensor.camera.depth",
+            "id": "depth_camera0",
+            "spawn_point": {"x": 0.33, "y": 0.0, "z": 1.45, "roll": 0.0, "pitch": 0.0, "yaw": 0.0},
+            "image_size_x": 1920,
+            "image_size_y": 1080,
+            "fov": 28
+        },
+        {
+            "type": "sensor.camera.depth",
+            "id": "depth_camera1",
+            "spawn_point": {"x": 0.090, "y": 0.0, "z": 1.65, "roll": 0.0, "pitch": 0.0, "yaw": 0},
+            "image_size_x": 1920,
+            "image_size_y": 1080,
+            "fov": 56
+        },
+        {
+            "type": "sensor.camera.depth",
+            "id": "depth_camera2",
+            "spawn_point": {"x": 0.030, "y": -0.1, "z": 1.65, "roll": 0.0, "pitch": 0.0, "yaw": -54.0},
+            "image_size_x": 1920,
+            "image_size_y": 1080,
+            "fov": 56
+        },
+        {
+            "type": "sensor.camera.depth",
+            "id": "depth_camera3",
+            "spawn_point": {"x": -0.09, "y": -0.1, "z": 1.65, "roll": 0.0, "pitch": 0.0, "yaw": -111.0},
+            "image_size_x": 1920,
+            "image_size_y": 1080,
+            "fov": 56
+        },
+        {
+            "type": "sensor.camera.depth",
+            "id": "depth_camera4",
+            "spawn_point": {"x": -0.180, "y": 0.0, "z": 1.65, "roll": 0.0, "pitch": 0.0, "yaw": -180.0},
+            "image_size_x": 1920,
+            "image_size_y": 1080,
+            "fov": 98
+        },
+        {
+            "type": "sensor.camera.depth",
+            "id": "depth_camera5",
+            "spawn_point": {"x": -0.09, "y": 0.1, "z": 1.65, "roll": 0.0, "pitch": 0.0, "yaw": -249.0},
+            "image_size_x": 1920,
+            "image_size_y": 1080,
+            "fov": 56
+        },
+        {
+            "type": "sensor.camera.depth",
+            "id": "depth_camera6",
+            "spawn_point": {"x": 0.03, "y": 0.1, "z": 1.65, "roll": 0.0, "pitch": 0.0, "yaw": 54.0},
+            "image_size_x": 1920,
+            "image_size_y": 1080,
+            "fov": 56
+        },
+        {
+            "type": "sensor.camera.semantic_segmentation",
+            "id": "semantic_camera0",
+            "spawn_point": {"x": 0.327, "y": 0.017, "z": 1.445, "roll": 3.483, "pitch": 0.0, "yaw": -1.764},
+            "image_size_x": 960,
+            "image_size_y": 540,
+            "fov": 28
+        },
+        {
+            "type": "sensor.camera.semantic_segmentation",
+            "id": "semantic_camera1",
+            "spawn_point": {"x": 0.090, "y": 0.015, "z": 1.642, "roll": 0.619, "pitch": 0.0, "yaw": 1.387},
+            "image_size_x": 960,
+            "image_size_y": 540,
+            "fov": 56
+        },
+        {
+            "type": "sensor.camera.semantic_segmentation",
+            "id": "semantic_camera2",
+            "spawn_point": {"x": 0.033, "y": -0.094, "z": 1.662, "roll": 1.192, "pitch": 0.0, "yaw": -53.044},
+            "image_size_x": 960,
+            "image_size_y": 540,
+            "fov": 56
+        },
+        {
+            "type": "sensor.camera.semantic_segmentation",
+            "id": "semantic_camera3",
+            "spawn_point": {"x": -0.089, "y": -0.115, "z": 1.641, "roll": 2.337, "pitch": 0.0, "yaw": -107.934},
+            "image_size_x": 960,
+            "image_size_y": 540,
+            "fov": 56
+        },
+        {
+            "type": "sensor.camera.semantic_segmentation",
+            "id": "semantic_camera4",
+            "spawn_point": {"x": -0.186, "y": 0.015, "z": 1.642, "roll": 1.764, "pitch": 0.0, "yaw": -179.381},
+            "image_size_x": 960,
+            "image_size_y": 540,
+            "fov": 98
+        },
+        {
+            "type": "sensor.camera.semantic_segmentation",
+            "id": "semantic_camera5",
+            "spawn_point": {"x": -0.095, "y": 0.143, "z": 1.684, "roll": 0.046, "pitch": 0.0, "yaw": -246.471},
+            "image_size_x": 960,
+            "image_size_y": 540,
+            "fov": 56
+        },
+        {
+            "type": "sensor.camera.semantic_segmentation",
+            "id": "semantic_camera6",
+            "spawn_point": {"x": 0.029, "y": 0.126, "z": 1.644, "roll": -0.527, "pitch": 0.0, "yaw": 55.703},
+            "image_size_x": 960,
+            "image_size_y": 540,
+            "fov": 56
+        },
+        {
+            "type": "sensor.lidar.ray_cast",
+            "id": "lidar_1_3",
+            "spawn_point": { 
+                "x": -0.046, "y": 0.016, "z": 1.832,
+                "roll": 0.213, "pitch": -0.057, "yaw": 0.974
+            },
+            "range": 200.0,
+            "channels": 4,
+            "points_per_second": 80000, 
+            "rotation_frequency": 20,
+            "upper_fov": 15.0, 
+            "lower_fov": 10.5,
+            "sensor_tick": 0.05,
+            "noise_stddev": 0.03,
+            "atmosphere_attenuation_rate": 0.008,
+            "dropoff_general_rate": 0.0,
+            "dropoff_intensity_limit": 1.0,
+            "dropoff_zero_intensity": 0.0
+        },
+        {
+            "type": "sensor.lidar.ray_cast",
+            "id": "lidar_4_7",
+            "spawn_point": { 
+                "x": -0.046, "y": 0.016, "z": 1.832,
+                "roll": 0.213, "pitch": -0.057, "yaw": 0.974
+            },
+            "range": 200.0,
+            "channels": 4,
+            "points_per_second": 80000,  
+            "rotation_frequency": 20,
+            "upper_fov": 10.5, 
+            "lower_fov": 8.49, 
+            "sensor_tick": 0.05,
+            "noise_stddev": 0.03,
+            "atmosphere_attenuation_rate": 0.008,
+            "dropoff_general_rate": 0.0,
+            "dropoff_intensity_limit": 1.0,
+            "dropoff_zero_intensity": 0.0
+        },
+        {
+            "type": "sensor.lidar.ray_cast",
+            "id": "lidar_8_23",
+            "spawn_point": { 
+                "x": -0.046, "y": 0.016, "z": 1.832,
+                "roll": 0.213, "pitch": -0.057, "yaw": 0.974
+            },
+            "range": 200.0,
+            "channels": 16,
+            "points_per_second": 320000,
+            "rotation_frequency": 20,
+            "upper_fov": 8.49, 
+            "lower_fov": 2.49,   
+            "sensor_tick": 0.05,
+            "noise_stddev": 0.03,
+            "atmosphere_attenuation_rate": 0.008,
+            "dropoff_general_rate": 0.0,
+            "dropoff_intensity_limit": 1.0,
+            "dropoff_zero_intensity": 0.0
+        },
+        {
+            "type": "sensor.lidar.ray_cast",
+            "id": "lidar_24_88",
+            "spawn_point": { 
+                "x": -0.046, "y": 0.016, "z": 1.832,
+                "roll": 0.213, "pitch": -0.057, "yaw": 0.974
+            },
+            "range": 200.0,
+            "channels": 65,
+            "points_per_second": 1300000, 
+            "rotation_frequency": 20,
+            "upper_fov": 2.49,      
+            "lower_fov": -5.51,   
+            "sensor_tick": 0.05,
+            "noise_stddev": 0.03,
+            "atmosphere_attenuation_rate": 0.008,
+            "dropoff_general_rate": 0.0,
+            "dropoff_intensity_limit": 1.0,
+            "dropoff_zero_intensity": 0.0
+        },
+        
+        {
+            "type": "sensor.lidar.ray_cast",
+            "id": "lidar_89_120",
+            "spawn_point": { 
+                "x": -0.046, "y": 0.016, "z": 1.832,
+                "roll": 0.213, "pitch": -0.057, "yaw": 0.974
+            },
+            "range": 200.0,
+            "channels": 32,
+            "points_per_second": 640000,
+            "rotation_frequency": 20,
+            "upper_fov": -5.51,   
+            "lower_fov": -16.71,  
+            "sensor_tick": 0.05,
+            "noise_stddev": 0.03,
+            "atmosphere_attenuation_rate": 0.008,
+            "dropoff_general_rate": 0.0,
+            "dropoff_intensity_limit": 1.0,
+            "dropoff_zero_intensity": 0.0
+        },
+        
+        {
+            "type": "sensor.lidar.ray_cast",
+            "id": "lidar_121_124",
+            "spawn_point": { 
+                "x": -0.046, "y": 0.016, "z": 1.832,
+                "roll": 0.213, "pitch": -0.057, "yaw": 0.974
+            },
+            "range": 200.0,
+            "channels": 4,  
+            "points_per_second": 80000,
+            "rotation_frequency": 20,
+            "upper_fov": -16.71, 
+            "lower_fov": -18.72, 
+            "sensor_tick": 0.05,
+            "noise_stddev": 0.03,
+            "atmosphere_attenuation_rate": 0.008,
+            "dropoff_general_rate": 0.0,
+            "dropoff_intensity_limit": 1.0,
+            "dropoff_zero_intensity": 0.0
+        },
+        
+        {
+            "type": "sensor.lidar.ray_cast",
+            "id": "lidar_125_128",
+            "spawn_point": { 
+                "x": -0.046, "y": 0.016, "z": 1.832,
+                "roll": 0.213, "pitch": -0.057, "yaw": 0.974
+            },
+            "range": 200.0,
+            "channels": 3, 
+            "points_per_second": 60000,
+            "rotation_frequency": 20,
+            "upper_fov": -20.265, 
+            "lower_fov": -24.8,   
+            "sensor_tick": 0.05,
+            "noise_stddev": 0.03,
+            "atmosphere_attenuation_rate": 0.008,
+            "dropoff_general_rate": 0.0,
+            "dropoff_intensity_limit": 1.0,
+            "dropoff_zero_intensity": 0.0
+        },
+        {
+            "type": "sensor.lidar.ray_cast_semantic",
+            "id": "semantic_lidar",
+            "spawn_point": { 
+                "x": -0.046, "y": 0.016, "z": 1.832,
+                "roll": 0.213, "pitch": -0.057, "yaw": 0.974
+            },
+            "range": 200.0,
+            "channels": 128, 
+            "points_per_second": 2560000,
+            "rotation_frequency": 20,
+            "upper_fov": 15.0, 
+            "lower_fov": -24.8,   
+            "sensor_tick": 0.05
+        }
+
+
+    ]
+}
